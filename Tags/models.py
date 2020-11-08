@@ -16,3 +16,10 @@ class Users(models.Model):
 
     def __str__(self):
         return self.user_name
+
+class Company(models.Model):
+    departments = models.CharField(max_length=200)
+    domain = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.departments
